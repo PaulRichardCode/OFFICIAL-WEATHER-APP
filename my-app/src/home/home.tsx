@@ -3,18 +3,15 @@ import React, { useState } from "react";
 const home = () => {
   const [display, setDisplay] = useState(true);
 
-  setDisplay((play: boolean): any => {
-    if (play === true) {
-      return <p>you lied</p>;
-    }
-  });
+  function click(): any {
+    setDisplay((play) => play !== play);
+  }
 
-  function click() {}
   return (
     <div className="flex justify-center items-center w-full h-screen">
-      <div className="bg-gray-500">
-        <button>click me</button>
-        <p>{display}</p>
+      <div className="bg-gray-500 ">
+        <button onClick={click}>click me</button>
+        <p>you click : {display}</p>
       </div>
     </div>
   );
