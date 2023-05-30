@@ -1,5 +1,10 @@
 import React from "react";
 import logo from "../data/glook.jpg";
+import { BsEmojiLaughing } from "react-icons/bs";
+///BsSearch FcSearch HiOutlineArrowRightOnRectangle
+// FcGallery GrGallery
+//MdOutlineTextRotationNone
+//CgMenuRightAlt
 
 function Home() {
   return (
@@ -18,7 +23,9 @@ function Home() {
         </div>
       </div>
 
-      <footer>Powered by Paul Richard</footer>
+      <footer>
+        Powered by Paul Richard <BsEmojiLaughing />{" "}
+      </footer>
     </div>
   );
 }
