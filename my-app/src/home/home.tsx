@@ -4,7 +4,9 @@ import { BsEmojiLaughing } from "react-icons/bs";
 ///BsSearch FcSearch HiOutlineArrowRightOnRectangle
 // FcGallery GrGallery
 //MdOutlineTextRotationNone
-//CgMenuRightAlt
+
+//FcHome CiHome
+// IoIosHelpCircle
 
 function Home() {
   return (
