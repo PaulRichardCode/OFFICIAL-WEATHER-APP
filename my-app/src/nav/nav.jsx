@@ -11,6 +11,10 @@ const Nav = () => {
 
   const [isOpen, setIsOpen] = useState(false);
 
+  const mouseClick = () => {
+    setIsOpen(!isOpen);
+  };
+
   const mouseEnter = () => {
     setIsOpen(true);
   };
@@ -22,8 +26,8 @@ const Nav = () => {
   /* Tailwind jsx */
   return (
     <div className="">
-      <nav class="px-2 sm:py-0 py-2 sm:px-2 fixed w-full top-0 left-0 border-gray-200 dark:border-gray-600">
-        <div class="flex flex-wrap items-center justify-between mx-auto">
+      <nav class="px-2 sm:py-0 py-2 sm:px-0 fixed w-full top-0 left-0 border-gray-200 dark:border-gray-600">
+        <div class="flex flex-wrap items-center justify-between mx-auto shadow-lg ">
           {/* logo */}
           <a href="#" class="flex items-center">
             <img
@@ -40,6 +44,7 @@ const Nav = () => {
             {/* responsive button */}
             <button
               onMouseEnter={mouseEnter}
+              onClick={mouseClick}
               id="btn"
               data-dropdown-toggle="navbar-sticky"
               type="button"
