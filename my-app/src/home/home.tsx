@@ -65,7 +65,7 @@ function Home() {
                 id="search"
                 className="py-2 border outline-none h-full px-3 border-blue-600"
               />
-              <button className="bg-blue-600 h-full px-5">
+              <button className="bg-blue-600 h-full px-5 border-blue-600 border">
                 <CgSearch className="text-white text-xl" />
               </button>
             </div>
