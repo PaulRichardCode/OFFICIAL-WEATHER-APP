@@ -39,7 +39,7 @@ const Nav = () => {
           <div class="flex md:order-2">
             {/* responsive button */}
             <button
-              onMouseDown={toggleMenu}
+              onMouseEnter={mouseEnter}
               id="btn"
               data-dropdown-toggle="navbar-sticky"
               type="button"
@@ -57,6 +57,7 @@ const Nav = () => {
         {/* OKAY */}
 
         <div
+          onMouseLeave={mouseLeave}
           className={`${
             isOpen ? "block" : "hidden"
           } flex justify-end items-center w-full rounded-xl`}
