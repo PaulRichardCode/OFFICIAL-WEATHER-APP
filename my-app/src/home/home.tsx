@@ -6,7 +6,7 @@ import { BsEmojiLaughing } from "react-icons/bs";
 //MdOutlineTextRotationNone
 
 //FcHome CiHome
-// IoIosHelpCircle
+//
 
 function Home() {
   return (

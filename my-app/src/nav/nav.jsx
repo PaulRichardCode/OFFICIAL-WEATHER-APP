@@ -2,8 +2,9 @@ import React from "react";
 import Logo from "../data/meme-logo.png";
 import { useState } from "react";
 import { CgMenuRightAlt } from "react-icons/cg";
-import { BsArrowRightShort } from "react-icons";
-import { FcGallery } from "react-icons/fc";
+import { FcGallery, FcHome } from "react-icons/fc";
+import { IoIosChatboxes, IoIosHelpCircle } from "react-icons/io";
+import { GrBeacon, GrGallery } from "react-icons/gr";
 
 const Nav = () => {
   /* Functionality */
@@ -27,7 +28,7 @@ const Nav = () => {
               className="md:w-24 w-12 "
               alt="Flowbite Logo"
             />
-            <p className="text-2xl text-blue-600 flex items-center">
+            <p className="text-2xl text-blue-600 flex items-center ">
               RICH <FcGallery /> MEME
             </p>
           </a>
@@ -58,21 +59,39 @@ const Nav = () => {
           id="navbar-sticky">
           <ul
             role={"none"}
-            class="flex flex-col p-4 w-1/6 bg-red-100 text-left md:mt-10 md:order-1 md:w-52 mt-4 border border-gray-100 rounded-lg md:flex-col md:text-sm md:font-normal md:tracking-wider md:border-0 ">
+            class="flex flex-col bg-white p-4 w-full text-left md:mt-4 md:order-1 md:w-52 mt-4 border border-gray-100 rounded-lg md:flex-col md:text-sm md:font-normal md:tracking-wider md:border-0 ">
             <li>
               {/* about */}
               <a
                 href="#about"
-                class="block py-2 pr-4 duration-300 md:text-black rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:py-2 ">
-                Home
+                class="flex items-center justify-between py-2 pr-4 duration-300 md:text-black rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:py-2 ">
+                <span className="flex items-center">
+                  <FcHome className="text-xl mx-2" /> Home
+                </span>{" "}
+                <span>&gt;</span>
               </a>
             </li>
             <li>
               {/* jobs */}
               <a
                 href="#jobs"
-                class="block py-2 pr-4 duration-300 md:text-black rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:py-2 ">
-                Help
+                class="flex items-center justify-between py-2 pr-4 duration-300 md:text-black rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:py-2 ">
+                <span className="flex items-center">
+                  <FcGallery className="text-xl mx-2" /> Create Meme
+                </span>{" "}
+                <span>&gt;</span>
+              </a>
+            </li>
+            <li>
+              {/* jobs */}
+              <a
+                href="#jobs"
+                class="flex items-center justify-between py-2 pr-4 duration-300 md:text-black rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:py-2 ">
+                <span className="flex items-center">
+                  <IoIosChatboxes className="text-xl mx-2 text-yellow-500" />{" "}
+                  Help
+                </span>{" "}
+                <span>&gt;</span>
               </a>
             </li>
           </ul>
