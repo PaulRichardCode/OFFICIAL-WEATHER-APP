@@ -36,7 +36,7 @@ const Nav = () => {
               className="md:w-24 w-12 "
               alt="Flowbite Logo"
             />
-            <p className="text-2xl text-blue-600 flex items-center ">
+            <p className="text-2xl text-blue-600 flex items-center font-medium">
               RICH <FcGallery /> MEME
             </p>
           </a>
@@ -48,7 +48,7 @@ const Nav = () => {
               id="btn"
               data-dropdown-toggle="navbar-sticky"
               type="button"
-              class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none  focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-yellow-200 dark:focus:ring-gray-600"
+              class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none  focus:ring-gray-200 dark:text-gray-400 dark:focus:ring-gray-600"
               aria-controls="navbar-sticky"
               aria-expanded="true">
               <span class="sr-only">Open main menu</span>

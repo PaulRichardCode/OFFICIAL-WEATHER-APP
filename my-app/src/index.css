@@ -4,9 +4,10 @@
 
 body {
   margin: 0;
-  font-family: concert one, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+  font-family: Poppins, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue";
-  /* font-family: -apple-system, 
+
+  /*  font-family: , 
     sans-serif; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
