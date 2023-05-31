@@ -69,7 +69,7 @@ const Nav = () => {
           id="navbar-sticky">
           <ul
             role={"none"}
-            class="flex flex-col bg-white p-4 w-full text-left md:mt-4 md:order-1 md:w-52 mt-4 border border-gray-100 rounded-lg md:flex-col md:text-sm md:font-normal md:tracking-wider md:border-0 ">
+            class="flex flex-col bg-white p-4 w-full text-left md:mt-4 md:order-1 md:w-72 mt-4 border border-gray-100 rounded-lg md:flex-col md:text-sm md:font-normal md:tracking-wider md:border-0 ">
             <li>
               {/* about */}
               <a

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { CgClose, CgSmile } from "react-icons/cg";
+import { CgClose, CgSearch, CgSmile } from "react-icons/cg";
+import { FcSearch } from "react-icons/fc";
 
 ///BsSearch FcSearch HiOutlineArrowRightOnRectangle
 // FcGallery GrGallery
@@ -46,14 +47,29 @@ function Home() {
         } block absolute top-0 left-0 w-full h-full bg-gray-600/30`}>
         {/* main edit */}
         <div className="w-1/2 mt-5 h-5/6 translate-x-1/2 px-6 py-3 bg-white rounded-lg">
-          <div className="flex justify-center w-full">
+          {/* ***********dont touch********* */}
+          <button className="relative -top-1 left-full" onClick={displayMeme}>
+            <CgClose className="text-xl" />
+          </button>
+          {/* touch */}
+          <div className="flex flex-col items-center justify-center w-full">
             <h1 className="text-center text-xl font-semibold">
               Select Generated Meme
             </h1>
+            {/* *searchbar* */}
+            <div className="flex mt-10 mb-5 h-10 items-center">
+              <input
+                type="search"
+                placeholder="write text to search"
+                name="search"
+                id="search"
+                className="py-2 border outline-none h-full px-3 border-blue-600"
+              />
+              <button className="bg-blue-600 h-full px-5">
+                <CgSearch className="text-white text-xl" />
+              </button>
+            </div>
           </div>
-          <button className="relative -top-7 left-full" onClick={displayMeme}>
-            <CgClose className="text-xl" />
-          </button>
         </div>
       </div>
     </div>
