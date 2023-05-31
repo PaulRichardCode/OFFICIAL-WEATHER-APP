@@ -73,7 +73,7 @@ const Nav = () => {
             <li>
               {/* about */}
               <a
-                href="#about"
+                href="#"
                 class="flex items-center justify-between py-2 pr-4 duration-300 md:text-black rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:py-2 ">
                 <span className="flex items-center">
                   <FcHome className="text-xl mx-2" /> Home
@@ -84,7 +84,7 @@ const Nav = () => {
             <li>
               {/* jobs */}
               <a
-                href="#jobs"
+                href="#"
                 class="flex items-center justify-between py-2 pr-4 duration-300 md:text-black rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:py-2 ">
                 <span className="flex items-center">
                   <FcGallery className="text-xl mx-2" /> Create Meme
