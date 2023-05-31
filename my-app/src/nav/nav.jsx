@@ -11,8 +11,12 @@ const Nav = () => {
 
   const [isOpen, setIsOpen] = useState(false);
 
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
+  const mouseEnter = () => {
+    setIsOpen(true);
+  };
+
+  const mouseLeave = () => {
+    setIsOpen(false);
   };
 
   /* Tailwind jsx */
