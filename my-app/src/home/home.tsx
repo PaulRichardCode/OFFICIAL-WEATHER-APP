@@ -46,13 +46,13 @@ function Home() {
         className={`${
           openMeme ? "block" : "hidden"
         } block absolute top-0 left-0 w-full h-full bg-gray-600/30`}>
-        {/* main edit */}
+        {/* main edit  */}
         <div className="w-1/2 mt-5 h-5/6 translate-x-1/2 px-6 py-3 bg-white rounded-lg">
-          {/* ***********dont touch********* */}
+          {/* ***********dont touch btn********* */}
           <button className="relative -top-1 left-full" onClick={displayMeme}>
             <CgClose className="text-xl" />
           </button>
-          {/* touch */}
+          {/* white area */}
           <div className="flex flex-col items-center justify-center w-full">
             <h1 className="text-center text-xl font-semibold">
               Select Generated Meme
@@ -70,12 +70,13 @@ function Home() {
                 <CgSearch className="text-white text-xl" />
               </button>
             </div>
+            {/* API INTEGRATIONS */}
+            <div className="flex w-full justify-start items-start">
+              <div className="flex flex-wrap w-40 h-64 bg-blue-100">
+                <h1>hello mate this is the api zone</h1>
+              </div>
+            </div>
           </div>
-        </div>
-
-        {/* API INTEGRATIONS */}
-        <div className="flex flex-wrap w-40 h-64 bg-white">
-          <h1>hello mate this is the api zone</h1>
         </div>
       </div>
     </div>
