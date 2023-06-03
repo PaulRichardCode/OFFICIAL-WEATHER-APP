@@ -56,7 +56,7 @@ function Home() {
             <h1 className="text-center text-xl font-semibold">
               Select Generated Meme
             </h1>
-            {/* *searchbar* */}
+            {/* *searchbar*/}
             <div className="flex mt-10 mb-5 h-10 items-center">
               <input
                 type="search"
