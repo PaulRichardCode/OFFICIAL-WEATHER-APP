@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { CgClose, CgSearch, CgSmile } from "react-icons/cg";
 import { FcSearch } from "react-icons/fc";
 import axios from "axios";
+import { IoLogoApple } from "react-icons/io";
 
 ///BsSearch FcSearch HiOutlineArrowRightOnRectangle
 // FcGallery GrGallery
@@ -73,7 +74,7 @@ function Home() {
             {/* API INTEGRATIONS */}
             <div className="flex w-full justify-start items-start">
               <div className="flex flex-wrap w-40 h-64 bg-blue-100">
-                <h1>hello mate this is the api zone</h1>
+                <h1>drake hotline bling</h1>
               </div>
             </div>
           </div>
