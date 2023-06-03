@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { CgClose, CgSearch, CgSmile } from "react-icons/cg";
 import { FcSearch } from "react-icons/fc";
+import axios from "axios";
 
 ///BsSearch FcSearch HiOutlineArrowRightOnRectangle
 // FcGallery GrGallery
@@ -70,6 +71,11 @@ function Home() {
               </button>
             </div>
           </div>
+        </div>
+
+        {/* API INTEGRATIONS */}
+        <div className="flex flex-wrap w-40 h-64 bg-white">
+          <h1>hello mate this is the api zone</h1>
         </div>
       </div>
     </div>
