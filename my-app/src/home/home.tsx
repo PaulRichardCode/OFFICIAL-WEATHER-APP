@@ -2,6 +2,7 @@ import { log } from "console";
 import React, { useEffect, useState } from "react";
 import { CgClose, CgSearch, CgSmile } from "react-icons/cg";
 import { FcSearch } from "react-icons/fc";
+import axios from "axios";
 
 ///BsSearch FcSearch HiOutlineArrowRightOnRectangle
 // FcGallery GrGallery
@@ -17,6 +18,22 @@ function Home() {
     setOpenMeme(!openMeme);
   };
 
+  const [memeData, setMemeData] = useState(null);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await axios.get("https://api.imgflip.com/get_memes");
+        setMemeData(response.data);
+      } catch (error) {
+        console.log("Error fetching meme data:", error);
+      }
+    };
+
+    fetchData();
+  }, []);
+
+  console.log({ memeData });
   return (
     <div className=" h-screen w-full flex flex-col items-center justify-center">
       <div className="text-black w-full relative">
@@ -39,7 +56,6 @@ function Home() {
             </button>
           </div>
         </div>
-        {/* ONCLICK DISPLAY API INTEGRATION AND EDITION */}
       </div>
       {/* Open meme display onclick */}
       <div
@@ -72,7 +88,9 @@ function Home() {
             </div>
             {/* API INTEGRATIONS */}
             <div className="flex w-full justify-start items-start">
-              <div className="flex flex-col items-center w-48 h-auto my-5 bg-white-100">
+              <div className="flex flex-col items-center w-48 h-auto my-5 text-black">
+                <h1>Meme Fetcher</h1>
+
                 {/* <h1 className="text-center text-sm">drake hotline bling</h1>
 
                 <button className="bg-blue-600 w-32 py-1 text-sm text-white rounded-md border-blue-600 border">
