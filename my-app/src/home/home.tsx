@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import { CgClose, CgSearch, CgSmile } from "react-icons/cg";
 import { FcSearch } from "react-icons/fc";
-import axios from "axios";
-import { IoLogoApple } from "react-icons/io";
 
 ///BsSearch FcSearch HiOutlineArrowRightOnRectangle
 // FcGallery GrGallery
@@ -73,8 +71,12 @@ function Home() {
             </div>
             {/* API INTEGRATIONS */}
             <div className="flex w-full justify-start items-start">
-              <div className="flex flex-wrap w-40 h-64 bg-blue-100">
-                <h1>drake hotline bling</h1>
+              <div className="flex flex-col items-center w-48 h-auto my-5 bg-white-100">
+                <h1 className="text-center text-sm">drake hotline bling</h1>
+
+                <button className="bg-blue-600 w-32 py-1 text-sm text-white rounded-md border-blue-600 border">
+                  Use this image
+                </button>
               </div>
             </div>
           </div>
