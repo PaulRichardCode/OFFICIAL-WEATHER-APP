@@ -57,7 +57,7 @@ function Home() {
           </div>
         </div>
       </div>
-      {/* Open meme display onclick */}
+      {/* Open meme display onclick axas */}
       <div
         className={`${
           openMeme ? "block" : "hidden"
