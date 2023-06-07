@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "../data/meme-logo.png";
+import Logo from "../assets/logo.png";
 import { useState } from "react";
 import { CgMenuRightAlt } from "react-icons/cg";
 import { FcGallery, FcHome } from "react-icons/fc";
@@ -30,15 +30,7 @@ const Nav = () => {
         <div class="flex flex-wrap items-center justify-between mx-auto shadow-lg ">
           {/* logo */}
           <a href="#" class="flex items-center">
-            <img
-              src={Logo}
-              width={70}
-              className="md:w-24 w-12 "
-              alt="Flowbite Logo"
-            />
-            <p className="text-2xl text-blue-600 flex items-center font-medium">
-              RICH <FcGallery /> MEME
-            </p>
+            <img src={Logo} className="md:w-12 w-12 mr-2" alt="Flowbite Logo" />
           </a>
           <div class="flex md:order-2">
             {/* responsive button */}
