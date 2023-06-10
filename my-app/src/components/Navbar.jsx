@@ -20,7 +20,7 @@ const Navbar = () => {
       }
     };
 
-    /* wewwewe */
+    /* wewweweidowest omo mafia jhhkj*/
 
     window.addEventListener("scroll", handleScroll);
 
