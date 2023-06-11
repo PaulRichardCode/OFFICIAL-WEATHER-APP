@@ -20,8 +20,6 @@ const Navbar = () => {
       }
     };
 
-    /* wewweweidowest omo mafia jhhkj*/
-
     window.addEventListener("scroll", handleScroll);
 
     return () => window.removeEventListener("scroll", handleScroll);
